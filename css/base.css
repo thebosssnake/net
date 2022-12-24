@@ -1,0 +1,92 @@
+#top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#top #topimg {
+  overflow: hidden;
+}
+#top #topimg img {
+  height: 100%;
+}
+#top #topvideo video {
+  width: 100%;
+}
+.listcon-a {
+  text-decoration: none !important;
+}
+.carousel-caption {
+  width: 100%;
+  height: 31%;
+  left: 0 !important;
+  bottom: 0 !important;
+  padding: 0 !important;
+}
+.carousel-caption .carouseltxt {
+  background-color: rgba(202, 202, 202, 0.13);
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  padding: 20px;
+  text-align: left;
+}
+.carousel-caption .carouseltxt p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 500;
+}
+.carousel-caption .carouseltxt h5 {
+  font-weight: 600;
+}
+.home {
+  position: relative;
+}
+.home .bg {
+  background-color: #eee;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.home-col {
+  padding-top: 30px;
+}
+.carousel {
+  display: flex;
+  width: 865px;
+  height: 361px;
+  justify-content: start;
+  border: 1px solid #bfbfbf2e;
+  box-shadow: 0px 0px 10px 1px rgba(170, 170, 170, 0.353);
+  margin-top: 30px ;
+  margin-bottom: 30px;
+}
+.carousel #myCarousel {
+  width: 75%;
+  margin-top: 0;
+}
+.carousel .list {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carousel .list .top {
+  display: flex;
+  height: 90px;
+  justify-content: start;
+  padding: 20px;
+  background-color: rgba(238, 238, 238, 0.238);
+}
+.carousel .list .top:hover {
+  background-color: #fff;
+  color: #ec412e;
+}
+.carousel .list .top .listtxt {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.carousel .list .top .listtxt h3 {
+  font-weight: 600;
+}

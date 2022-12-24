@@ -1,0 +1,1512 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,:after,:before{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:0!important;-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,time,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:""}
+table{border-collapse:collapse;border-spacing:0}
+body{color:#3d4c63;background:#fff;font:14px/1.5 "Microsoft Yahei",sans-serif;outline:0}
+a{color:#333;text-decoration:none}
+img{max-width:100%;border:none}
+em,i{font-style:normal}
+.word-text em{font-style:italic}
+.word-text i{font-style:italic}
+table{border-collapse:collapse;border-spacing:0}
+input,select,textarea{font-size:12px;color:#444;font-family:"Microsoft Yahei",sans-serif;outline:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+button,input[type=button],input[type=reset],input[type=submit],select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer}
+::-webkit-input-placeholder{color:#999}
+::-moz-placeholder{color:#999}
+:-ms-input-placeholder{color:#999}
+::-ms-clear,::-ms-reveal{display:none}
+.fix{*zoom:1}
+.fix:after,.fix:before{display:block;content:"";height:0;clear:both}
+.c{clear:both}
+.col-l,.l{float:left}
+.col-r,.r{float:right}
+.ani{-ms-transition:.3s;-moz-transition:.3s;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}
+.unselect{-ms-user-select:none;-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}
+.wp{width:100%;max-width:1200px;margin:0 auto}
+.h50{height:50px;clear:both;overflow:hidden}
+.h100{height:100px;clear:both;overflow:hidden}
+@font-face{font-family:FZDHTJW;src:url(https://hrawards.51job.com/channel/fonts/FZDHTJW.ttf)}
+@font-face{font-family:JTHZGB;src:url(https://hrawards.51job.com/channel/fonts/JTHZGB.ttf)}
+.header{position:fixed;z-index:400;top:0;left:0;width:100%;height:80px;box-shadow:0 2px 24px 0 rgba(0,0,0,.06);background-color:#fff}
+@media only screen and (max-width:1200px){
+.header{overflow-x:auto}
+.header .wp{width:1200px}
+}
+.header .wp{height:100%}
+.hd-btn{float:left;width:50px;height:45px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-nav.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-nav.png") 1x,url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-nav@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:19px auto;background-size:19px auto;position:relative;top:18px;background-position:center center;cursor:pointer;background-color:#ec412f}
+.hd-btn.open{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/close.svg);background-color:#ec412f;-webkit-background-size:19px auto;background-size:19px auto}
+.hd-logo{float:left;margin-left:10px;position:relative;top:18px;height:46px;overflow:hidden}
+.hd-logo img{display:block;height:100%;width:auto;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none;user-select:none}
+.hd-so{display:block;float:left;margin-left:188px;width:453px;height:40px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;overflow:hidden;position:relative;top:20px}
+.hd-so .inp{position:absolute;top:0;left:0;width:100%;height:100%;padding-left:45px;font-size:14px;background-color:#f5f5f5;z-index:1;border:none}
+.hd-so .inp::-webkit-input-placeholder{color:#bcbcbc}
+.hd-so .inp::-moz-placeholder{color:#bcbcbc}
+.hd-so .inp:-moz-placeholder{color:#bcbcbc}
+.hd-so .inp:-ms-input-placeholder{color:#bcbcbc}
+.hd-so .sub{width:17px;height:18px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so@2x.png") 2x);z-index:2;position:absolute;left:17px;top:50%;margin-top:-9px;font-size:0;border:none;background-color:transparent;background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain}
+.hd-download{float:right;font-size:0;position:relative;padding-top:22px;line-height:38px;cursor:pointer;height:100%}
+.hd-download span{display:inline-block;vertical-align:middle;font-size:16px;color:#bbb}
+.hd-download span a{display: initial;background: none;color: #bbb;}
+.hd-download a{display:inline-block;vertical-align:middle;height:38px;width:38px;background-color:#efefef;border-radius:4px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/download.svg);-webkit-background-size:15px auto;background-size:15px auto;background-repeat:no-repeat;background-position:center center;margin-left:12px}
+.hd-qr{width:120px;height:120px;padding:10px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;position:absolute;top:110%;left:50%;margin-left:-60px;box-shadow:0 0 18px 0 rgba(0,0,0,.1);z-index:5;background-color:#fff;border:1px solid rgba(0,0,0,.1);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;pointer-events:none}
+.hd-qr:after{content:'';background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;width:18px;height:6px;position:absolute;left:50%;margin-left:-9px;bottom:100%}
+.hd-qr>img{display:block;width:100%;height:100%}
+.hd-500{float:right;height:100%;width:150px;background-color:#151515;margin-left:24px;text-align:center;font-size:0;line-height:80px;position:relative;display: block;}
+.hd-500 a img{width:75px;height:auto;vertical-align:middle;display:inline-block}
+.hd-500:hover .hd-qr,.hd-download:hover .hd-qr{opacity:1;pointer-events:auto}
+.nav-out{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:300;-webkit-transition:all .1s;-moz-transition:all .1s;-ms-transition:all .1s;-o-transition:all .1s;transition:all .1s;opacity:0;pointer-events:none}
+.nav-out.show{opacity:1;pointer-events:auto}
+.nav{position:fixed;top:80px;left:0;z-index:300;width:513px;background-color:#ec412d;color:#fff;font-size:16px;overflow-y:auto;height:calc(100% - 80px);-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform:translateX(-100%);-o-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .1s;-moz-transition:all .1s;-ms-transition:all .1s;-o-transition:all .1s;transition:all .1s}
+.nav-out.show .nav{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}
+.nav a{color:#fff}
+.nk-item{padding:20px 87px 20px 73px}
+.nk-item:nth-child(even){background-color:#c83927}
+.nk-item h3{font-weight:400;opacity:.68}
+.nk-item a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.nk-item a:hover{opacity:.8}
+.nav-item{padding:20px 87px 20px 73px}
+.nav-item dl{border-bottom:1px solid #fff;padding-bottom:20px}
+.nav-item dd a{display:block;line-height:1;margin:15px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative;padding-left:19px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.nav-item dd a:after{content:'';width:8px;height:8px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#fff;position:absolute;left:0;top:50%;margin-top:-4px}
+.nav-item dd a:hover{opacity:.8}
+.nav-item h3{font-weight:400}
+.nav-qr{padding:15px 0 40px;border-bottom:1px solid #fff}
+.nav-qr h3{margin-bottom:15px}
+.nav-qr img{display:block;width:125px;height:125px}
+.nav-mgz{padding:15px 0 20px}
+.nav-mgz h3{margin-bottom:20px}
+.mgz{overflow:hidden}
+.mgz-pic{float:left;width:137px;height:186px;overflow:hidden;margin-right:30px}
+.mgz-pic img{display:block;width:100%;height:100%}
+.mgz-txt{overflow:hidden;height:186px}
+.mgz-txt .con{position:relative;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
+.mgz-txt .date{margin-bottom:10px}
+.mgz-txt h3>a{font-weight:700;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.mgz-txt h3>a span{font-weight:400}
+.nav-item-mgz{padding-right:25px}
+.nav-mgz .apply{display:block;width:122px;height:44px;line-height:42px;border:1px solid #fff;text-align:center;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.nav-mgz .apply:hover{opacity:.8}
+.nav-mgz .apply.btn-mobile{display:none}
+.nav-link{padding:35px 10px 35px 73px;background-color:#d93c29}
+.nav-link h3{margin-bottom:30px}
+.nav-link .bdsharebuttonbox a{display:inline-block;vertical-align:middle;width:62px;height:58px;background-repeat:no-repeat;background-position:center center}
+.nav-link .bdsharebuttonbox a:hover{background-color:rgba(255,255,255,.2)}
+.bdsharebuttonbox .link-wx{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/wechat-w.svg);-webkit-background-size:32px auto;background-size:32px auto;position:relative}
+.nav-link .wx-qr{position:absolute;bottom:110%;left:0;width:100px;height:100px;overflow:hidden;opacity:0;pointer-events:none;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;background-color:#fff}
+.nav-link .wx-qr img{display:block;width:100%;height:100%}
+.link-wx:hover .wx-qr{opacity:1;pointer-events:auto}
+.bdsharebuttonbox .link-wb{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/weibo-w.svg);-webkit-background-size:28px auto;background-size:28px auto}
+.bdsharebuttonbox .link-in{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/linkedin-w.svg);-webkit-background-size:21px auto;background-size:21px auto}
+.nav::-webkit-scrollbar{width:0}
+.nav::-webkit-scrollbar-track{background:#eee}
+.nav::-webkit-scrollbar-thumb{background:#2c9cee}
+.nav::-webkit-scrollbar-thumb:window-inactive{background:#2c9cee}
+.app-top{overflow:hidden;padding:10px;box-shadow:0 5px 33px 0 rgba(0,0,0,.1);position:fixed;top:0;left:0;width:100%;z-index:400;background-color:#fff}
+.app-top .open{float:right;color:#ec412e;line-height:34px;font-size:13px}
+.app-logo{overflow:hidden}
+.app-logo i{display:block;float:left;width:37px;height:34px;background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;margin-right:9px}
+.app-logo .txt{color:#494949;opacity:.6;overflow:hidden;height:34px;line-height:34px;font-size:0}
+.app-logo .txt p{line-height:15px;font-size:11px;display:inline-block;vertical-align:middle}
+.header.change{height:50px}
+.header.change .hd-btn{-webkit-transform:translateX(-100px);-moz-transform:translateX(-100px);-ms-transform:translateX(-100px);-o-transform:translateX(-100px);transform:translateX(-100px);opacity:0;top:2px}
+.header.change .hd-logo{-webkit-transform:translateX(-50px);-moz-transform:translateX(-50px);-ms-transform:translateX(-50px);-o-transform:translateX(-50px);transform:translateX(-50px);height:40px;top:5px}
+.header.change .hd-500{-webkit-transform:translateX(100px);-moz-transform:translateX(100px);-ms-transform:translateX(100px);-o-transform:translateX(100px);transform:translateX(100px);opacity:0;display: none;}
+.header.change .hd-download{-webkit-transform:translateX(0px);-moz-transform:translateX(0px);-ms-transform:translateX(0px);-o-transform:translateX(0px);transform:translateX(0px);padding-top:5px;line-height:40px}
+.header.change .hd-download span{font-size:14px}
+.header.change .hd-download a{width:34px;height:31px;-webkit-background-size:12px auto;background-size:12px auto}
+.header.change .hd-so{height:31px;top:10px;width:288px;margin-left:0;-webkit-transform:translateX(150px);-moz-transform:translateX(150px);-ms-transform:translateX(150px);-o-transform:translateX(150px);transform:translateX(150px)}
+.hd-tit{float:left;font-size:20px;color:#151511;height:26px;line-height:26px;padding-left:20px;border-left:1px solid rgba(0,0,0,.1);position:relative;top:12px;opacity:0;width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.header.change .hd-tit{opacity:1;-webkit-transform:translateX(-30px);-moz-transform:translateX(-30px);-ms-transform:translateX(-30px);-o-transform:translateX(-30px);transform:translateX(-30px);width:450px}
+.header,.header *{-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.footer{border-top:4px solid #000;padding-top:32px}
+.fd-top{overflow:hidden;padding-bottom:25px;border-bottom:1px solid rgba(8,8,8,.06)}
+.fd-logo{float:left;height:148px;line-height:148px;width:214px;border-right:1px solid rgba(0,0,0,.06)}
+.fd-logo a{display:inline-block;vertical-align:middle;height:75px;overflow:hidden}
+.fd-logo img{display:block;height:100%;width:auto;opacity:.12;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.fd-logo img:hover{opacity:1}
+.fd-qr{float:right;width:262px;height:148px;text-align:right;border-left:1px solid rgba(0,0,0,.06);line-height:148px}
+.fd-qr span{display:inline-block;vertical-align:middle;font-size:18px;color:#ec412e;font-weight:700;margin-right:30px}
+.fd-qr .qr{display:inline-block;vertical-align:middle;width:120px;height:118px;overflow:hidden}
+.fd-qr .qr img{display:block;width:100%;height:100%}
+.fd-nav{overflow:hidden;padding:34px 66px 0}
+.fd-nav-top{text-align:justify;border-bottom:1px solid rgba(0,0,0,.06);padding-bottom:20px;font-size:0}
+.fd-nav-top:after{content:'';display:inline-block;width:100%}
+.fd-nav-top a{color:#151515;font-size:14px;display:inline-block;vertical-align:middle;position:relative}
+.fd-nav-top a+a:after{content:'';width:1px;height:13px;background-color:#e5e5e5;position:absolute;left:-30px;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
+.fd-nav-bot{margin-top:25px;text-align:left;font-size:0}
+.fd-nav-bot a{font-size:14px;color:#858585;opacity:1;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;display:inline-block;vertical-align:middle}
+.fd-nav-bot a:hover{opacity:1;}
+.fd-nav-bot a+a{margin-left:30px}
+.copyright{overflow:hidden;font-size:13px;color:#080808;opacity:.24;line-height:50px}
+.footer-m{display:none}
+body{padding-top:0px;min-width:1220px}
+.app-qr{position:fixed;top:0;left:0;width:100%;height:100%;z-index:500;display:none}
+.app-qr-bg{display:block;width:100%;height:100%;background:rgba(0,0,0,.7);cursor:pointer}
+.app-qr .con{position:absolute;top:50%;left:50%;background-color:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;overflow:hidden;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);padding:20px}
+.app-qr .con .pic{height:300px;width:300px;padding: 10px;}
+.app-qr .con .pic img{display:block;width:100%;height:100%}
+.app-qr .con .txt {
+    font-size: 16px;
+    text-align: center;
+    color: #ee4938;
+}
+.row-home{padding-bottom:88px}
+.word-text img{width:100% !important; height:auto !important;}
+.row-first{box-shadow:0 0 80px 0 rgba(0,0,0,.15);background-color:#f3f3f3;padding:32px 0 40px;position:relative;z-index:2}
+.mod-ad{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;overflow:hidden;box-shadow:0 0 9px 0 rgba(0,0,0,.22);display:block;background-color:#c7c7c7;position:relative;}
+.mod-ad img{display:block;width:100%}
+.mod-news{overflow:hidden;box-shadow:0 0 40px 0 rgba(0,0,0,.22);border-radius:4px;margin-top:32px;height:540px}
+.news-big1{float:left;width:865px;height:100%;position:relative;margin-bottom:20px;}
+.mod-tips{position:absolute;top:24px;right:24px;width:110px;height:40px;line-height:40px;background-color:#ec412e;opacity:.88;text-align:center;color:#fff;font-size:0;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;z-index:3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mod-tips i{display:inline-block;vertical-align:middle;width:14px;height:14px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head.svg);background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;margin-right:3px}
+.mod-tips span{display:inline-block;vertical-align:middle;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 20px)}
+.mod-tips:hover{opacity:1}
+.nb1-pic{height:100%;overflow:hidden}
+.nb1-pic img{display:block;width:100%;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.news-big1:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.nb1-txt{position:absolute;bottom:0;left:0;width:100%;padding:30px 35px}
+.nb1-txt .tit{position: relative; z-index: 2;}
+.nb1-txt .mod-info{position: relative; z-index: 2; opacity: .6;}
+.nb1-txt .tit a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:24px;color:#fff;font-weight:700}
+.mod-info{font-size:0;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mod-info span{display:inline-block;vertical-align:middle;font-size:14px;color:#fff;font-weight:lighter}
+.mod-info span+span{margin-left:24px;position:relative}
+.mod-info span+span:after{content:'';width:1px;height:12px;background:rgba(255,255,255,.24);position:absolute;left:-12px;top:50%;margin-top:-6px}
+.news-list1{overflow:hidden}
+.news-list1 li{height:180px}
+.nl1-con{display:block;position:relative;height:100%}
+.nl1-pic{height:100%;overflow:hidden}
+.nl1-pic img{display:block;width:100%;height:100%;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.nl1-con:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.nl1-con:after{content:'';bottom:0;left:0;width:100%;height:50%;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top.png") 1x,url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%;background-position:left bottom;z-index:1;position:absolute}
+.nb1-txt:after{content:'';bottom:0;left:0;width:100%;height:100%;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top.png") 1x,url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha-top@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%;background-position:left bottom;z-index:1;position:absolute}
+.nl1-con .mod-tips{top:0;right:0}
+.nl1-txt{position:absolute;bottom:0;left:0;width:100%;padding:15px 40px 15px 20px;z-index:2}
+.nl1-txt .tit{overflow:hidden;text-overflow:ellipsis;font-size:14px;color:#fff}
+.nl1-txt .mod-info{font-size:0;margin-top:5px;opacity:.6;color:#999}
+.nl1-txt .mod-info span{font-size:12px}
+.nl1-txt .mod-info span+span:after{background-color:#999}
+.row-home{overflow:hidden;background-color:#fafafa;padding-top:42px;padding-bottom:88px}
+.row-home .ovh{overflow:hidden;padding-bottom:45px}
+.row-home .home-main{margin-bottom:0}
+.home-main{float:left;width:865px;margin-bottom:36px}
+.home-col{float:right;width:300px}
+.mod-list1{margin:0px -10px}
+.mod-list1 li{float:left;width:33.3%;margin-bottom:27px}
+.list1-con{margin:0 10px;overflow:hidden;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;box-shadow:0 0 30px 0 rgba(0,0,0,.03)}
+.list1-top{position:relative}
+.list1-top .mod-tips{top:0;right:0;width:96px;height:36px;line-height:36px}
+.list1-top .mod-tips span{font-size:12px}
+.list1-top .mod-tips i{width:12px;height:12px}
+.l1t-pic{padding-top:60.21%;position:relative;overflow:hidden}
+.l1t-pic img{position:absolute;top:0;left:0;width:100%;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.list1-top:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.list1-top:after{content:'';bottom:0;left:0;width:100%;height:50%;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha.png") 1x,url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%;background-position:left bottom;z-index:1;position:absolute}
+.l1t-txt{position:absolute;bottom:0;left:0;width:100%;height:60px;line-height:60px;padding-left:20px;padding-right:40px;font-size:0;z-index:2}
+.l1t-txt h3{display:inline-block;vertical-align:middle;line-height:21px}
+.l1t-txt h3 a{color:#fff;font-size:16px;display:block;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list1-bot{background-color:#fff;padding:15px 22px 27px;height:100px}
+.l1b-info{line-height:32px;max-height: 32px; overflow: hidden;background-color:#fafafa;color:#999;font-size:0;padding-left:12px;margin-bottom:10px}
+.l1b-info span{display:inline-block;vertical-align:middle;font-size:12px}
+.l1b-info span:first-child {
+    max-width: 50%;
+    overflow: hidden;
+    height: 100%;
+    max-height: 32px;
+   text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.l1b-info span+span{margin-left:24px;position:relative}
+.l1b-info span+span:after{content:'';width:1px;height:12px;background:#b4b4b4;position:absolute;left:-12px;top:50%;margin-top:-6px}
+.l1b-desc{overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;font-size:14px;color:#030418;opacity:.62}
+.l1t-play{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play.png);width:44px;height:44px;background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play@2x.png") 2x);background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;position:absolute;top:48px;z-index:3;left:50%;margin-left:-22px;opacity:1;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}
+/* .mod-list1 li.video .list1-top:hover .l1t-play{opacity:1} */
+.mb30{margin-bottom:30px}
+.mod-news2{box-shadow:0 0 30px 0 rgba(0,0,0,.03);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden;margin-bottom:30px}
+.news2-right-left{float:left;width:432px;overflow:hidden;height:255px;position:relative;padding:7px 32px 0;background-color:#fff;border-right:1px solid rgba(3,4,24,.08);}
+.news2-left{float:left;width:432px;height:255px;position:relative;overflow:hidden;background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;background-size:cover}
+.news2-left a{display:block;height:100%}
+.news2-left img{-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s;position:absolute;right:0;bottom:0;opacity:0.5}
+.news2-left:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.news2-left .mod-tips{top:0;right:0;width:96px;height:36px;line-height:36px}
+.news2-left .mod-tips i{width:12px;height:12px}
+.news2-left .mod-tips span{font-size:12px}
+.news2-left .tips{position:absolute;top:20px;left:25px;font-size:0}
+.news2-left .tips i{background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;background-position:center center;width:32px;height:18px;display:inline-block;vertical-align:middle}
+.news2-left .tips span{display:inline-block;vertical-align:middle;font-size:20px;color:#fff;margin-left:5px}
+.news2-left .txt{position:absolute;left:25px;top:35%;max-width:210px;z-index:3}
+.news2-left .txt .tit{font-size:16px;color:#fff;font-weight:700;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:10px;box-sizing:content-box}
+.news2-left .txt .tit h3{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.news2-left .mod-info{margin-top:15px;opacity:.72}
+.news2-left .mod-info span{font-size:12px;color:#fff}
+.news2-left .mod-info span+span:after{background:#999}
+.news2-right{overflow:hidden;height:255px;width:433px;padding:7px 32px 0;background-color:#fff}
+.n2r-item{height:79px;border-bottom:1px solid rgba(3,4,24,.08);padding-top:15px;padding-bottom:10px}
+.n2r-item:last-child{border-bottom:none}
+.n2r-item .top a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#030418; background:#ffffff;font-size:16px;font-weight:700;margin-bottom:10px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.n2r-item .top a:hover{color:#ec412e}
+.n2r-item .bot{overflow:hidden;line-height:28px}
+.n2r-item .bot .mod-info{opacity:.72;float:right;margin:0}
+.n2r-item .bot .mod-info span{font-size:12px;color:#999}
+.n2r-item .bot .mod-info span+span:after{background:#999}
+.n2r-item .bot .tips{overflow:hidden;color:#ec412e;font-size:0;white-space:nowrap;text-overflow:ellipsis}
+.n2r-item .bot .tips i{display:inline-block;vertical-align:middle;width:12px;height:12px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red@2x.png") 2x);background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain}
+.n2r-item .bot .tips span{display:inline-block;vertical-align:middle;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 20px)}
+.mod-rank{overflow:hidden;box-shadow:0 0 30px 0 rgba(0,0,0,.03)}
+.rank-left{float:left;width:50%;background-repeat:no-repeat;background-position:right center;-webkit-background-size:cover;background-size:cover;height:240px;position:relative}
+.rank-left>a{display:block;height:100%;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.rank-left>a:hover{opacity:.8}
+.rank-left .title{font-size:0;position:absolute;top:20px;left:30px}
+.rank-left .title i{display:inline-block;vertical-align:middle;width:22px;height:20px;background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;margin-right:5px}
+.rank-left .title span{display:inline-block;vertical-align:middle;font-size:20px;color:#fff}
+.rank-left .txt{position:absolute;top:35%;left:30px}
+.rank-left .txt .tit{color:#fff;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid rgba(255,255,255,.2);font-size:18px;width:140px;overflow:hidden}
+.rank-left .txt .tit h3{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.rank-left .mod-info{opacity:.72}
+.rank-right{float:right;width:50%;height:240px}
+.rank-right .item{height:50%;position:relative;background:linear-gradient(0deg,rgba(21,21,21,1),rgba(35,35,35,1),rgba(30,30,30,1))}
+.rank-right .item>a{display:block;height:100%;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.rank-right .item>a:hover{opacity:.8}
+.rank-right .item .tit{position:absolute;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:40px;font-size:18px;color:#fff;font-weight:700;width:135px;line-height:24px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.rank-right .item .tit:after{content:'';width:70px;height:1px;background:#fff;opacity:.2;position:absolute;left:calc(100% + 15px);top:50%}
+.rank-right .item .pic{position:absolute;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:40px}
+.hci-title{font-size:0;padding-bottom:14px;border-bottom:1px solid rgba(3,4,24,.08);line-height:21px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hci-title i{display:inline-block;vertical-align:middle;height:21px;width:22px;background-repeat:no-repeat;background-position:left center;-webkit-background-size:auto 100%;background-size:auto 100%;margin-right:2px}
+.hci-title span{font-size:18px;color:#030418;display:inline-block;vertical-align:middle}
+.hci-hot{padding-top:15px}
+.hci-hot li{margin-bottom:18px}
+.hci-hot .top{overflow:hidden}
+.hci-hot .pic{float:left;width:92px;height:55px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;overflow:hidden;margin-right:15px}
+.hci-hot .pic img{display:block;width:100%;height:100%;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.hci-hot .top:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.hci-hot .tit a{display:block;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;color:#151515;font-size:14px;font-weight:700;line-height:21px;padding-top:6px;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}
+.hci-hot .top:hover .tit a{color:#ec412e}
+.hci-hot .bot{overflow: hidden;margin-top:14px;background-color:#fff;height:38px;line-height:38px;padding-left:15px;padding-right:10px;box-shadow:0 0 30px 0 rgba(0,0,0,.03);position:relative}
+.hci-hot .bot:after{content:'';background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san@2x.png) 2x);background-position:center center;background-repeat:repeat;-webkit-background-size:auto;background-size:auto;width:18px;height:6px;position:absolute;bottom:100%;left:38px}
+.hci-hot .mod-info{float:right;opacity:.6;margin:0;max-width: 60%;overflow: hidden;}
+.hci-hot .mod-info span{color:#999;font-size:11px}
+.hci-hot .mod-info span:after{background-color:#999}
+.hci-hot .bot-tips{overflow:hidden;font-size:0;white-space:nowrap;text-overflow:ellipsis}
+.hci-hot .bot-tips i{display:inline-block;vertical-align:middle;width:12px;height:12px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-head-red@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;background-position:center center;margin-right:4px}
+.hci-hot .bot-tips span{display:inline-block;vertical-align:middle;font-size:12px;color:#ec412e;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 20px)}
+.hci-act .pic{border-radius:3px;overflow:hidden;margin-top:18px}
+.hci-act .pic img{display:block;width:100%;height:auto}
+.hci-act .tit>a{display:block;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;color:#030418;font-size:14px;line-height:21px;font-weight:700;padding-top:10px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.hci-act .tit>a:hover{color:#ec412e}
+.mod-ad2{margin-top:28px;overflow:hidden;display:block;margin-bottom:28px;background-color:#c7c7c7}
+.mod-ad2 img{display:block;width:100%;height:auto}
+.hci-title.nbb{border-bottom:none}
+.hci-dis{background-color:#fff;box-shadow:0 0 30px 0 rgba(0,0,0,.03);display:flex;justify-content:space-between;flex-wrap:wrap}
+.hci-dis a{width:33.3%;color:#030418;opacity:.38;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;line-height:49px;box-shadow:0 0 30px 0 rgba(0,0,0,.03) inset}
+.hci-dis a:nth-child(3n+1){padding-left:20px}
+.hci-dis a:nth-child(3n+2){padding-right:10px}
+.hci-dis .on,.hci-dis a:hover{opacity:1;font-weight:700}
+.hci-video{padding-top:18px}
+.hci-video li{margin-bottom:20px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden}
+.hci-video .con{position:relative;padding-top:60%;display:block}
+.hci-video .con img{position:absolute;top:0;left:0;width:100%;z-index:1;-webkit-transition:all .8s;-moz-transition:all .8s;-ms-transition:all .8s;-o-transition:all .8s;transition:all .8s}
+.hci-video .con:hover img{-webkit-transform:scale(1.08);-moz-transform:scale(1.08);-ms-transform:scale(1.08);-o-transform:scale(1.08);transform:scale(1.08)}
+.hci-video .con:after{content:'';bottom:0;left:0;width:100%;height:50%;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha.png") 1x,url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sha@2x.png") 2x);background-repeat:no-repeat;-webkit-background-size:100% 100%;background-size:100% 100%;background-position:left bottom;z-index:2;position:absolute}
+.hci-video .play{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2.png);width:52px;height:52px;background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2@2x.png") 2x);background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;position:absolute;top:50%;z-index:3;left:50%;margin-left:-26px;opacity:0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}
+.hci-video li .con:hover .play{opacity:1}
+.hci-video .txt{position:absolute;bottom:0;left:0;width:100%;padding:15px 30px 15px 20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color:#fff;font-weight:700;z-index:3}
+.hci-video .mod-tips{top:0;right:0;width:97px;height:36px}
+.hci-video .mod-tips i{width:12px;height:12px}
+.hci-video .mod-tips span{font-size:12px}
+.home-col-item{margin-bottom:30px}
+.home-col-item.fixedUp{position:fixed;top:50px;z-index:50;background-color:#fafafa;width:300px;padding-top:30px}
+.main{overflow:hidden}
+.home-main-top{padding-bottom:35px;margin-bottom:35px;border-bottom:1px solid rgba(0,0,0,.1);overflow:hidden;min-height: 100vh;}
+.ad-top{margin-top:32px;margin-bottom:40px}
+.ad-bot{margin-bottom:91px}
+.sap-out{float:left;width:115px;min-height:10px}
+.shareAndPrint{border:1px solid rgba(0,0,0,.06);border-radius:3px;width:115px}
+.sap-top{padding:0 25px;border-bottom:1px solid rgba(8,8,8,.1)}
+.sap-top .bdsharebuttonbox a{display:block;height:55px;font-size:0;line-height:55px;padding:0;text-align:center;margin:0 auto;float:none;background:no-repeat center center/32px auto}
+/* .sap-top .bdsharebuttonbox a{display:block;height:55px;background:0 0;font-size:0;line-height:55px;padding:0;text-align:center;margin:0 auto;float:none}
+.bdsharebuttonbox a img{display:inline-block;vertical-align:middle;width:32px;height:25px}
+.bdsharebuttonbox a.share-wx img{height:32px}
+.bdsharebuttonbox a.share-wb img{opacity: .6;}
+.bdsharebuttonbox a.share-in img{opacity: .6;}
+.bdsharebuttonbox a img{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);_filter:none}
+.bdsharebuttonbox a:hover img{-webkit-filter:grayscale(0);-moz-filter:grayscale(0);-ms-filter:grayscale(0);-o-filter:grayscale(0);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);_filter:none}
+.bdsharebuttonbox a.share-wb:hover img{opacity: 1;}
+.bdsharebuttonbox a.share-in:hover img{opacity: 1;} */
+.sap-mid{padding:0 25px;border-bottom:1px solid rgba(8,8,8,.1)}
+.sap-mid .print{display:block;height:74px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/print.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/print.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/print@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:28px auto;background-size:28px auto}
+.sap-mid .text{display:block;height:74px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-t.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-t.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-t@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:26px auto;background-size:26px auto}
+.sap-mid2{padding:10px 0}
+.sap-mid2 .print,.sap-mid2 .text{height:50px}
+.sap-bot span{display:block;text-align:center;padding-top:20px;font-size:14px;color:#8e8e8e;padding-bottom:16px}
+.btn-plus{display:block;height:42px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:55px auto;background-size:55px auto;background-color:#ec412e}
+.mod-word{overflow:hidden;padding-left:30px}
+.mod-word .title{font-size:32px;color:#151515;font-weight:400;padding-bottom:20px}
+.mod-word .mod-info{margin:0;line-height:48px;background-color:#f2f2f2;padding-left:13px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden}
+.mod-word .mod-info span{color:#999;font-size:12px}
+.mod-word .mod-info span+span:after{background-color:#999}
+.word-text{padding-top:30px;font-size:16px;color:#545454;line-height:1.7;border-bottom:1px solid rgba(10,8,9,.1);border-bottom:none;padding-bottom:0;margin-bottom:0;text-align:justify;}
+.word-text p{margin-bottom:20px}
+.word-text p:last-child{padding-bottom:0}
+.word-img{position:relative;padding-top:20px;border-top:1px solid rgba(10,8,9,.1)}
+.word-img>img{display:block;width:100%;height:auto}
+.word-qr{position:absolute;top:30%;left:0;width:100%}
+.word-img2 .word-qr{left:auto;width:auto;right:65px;max-width:165px}
+.word-qr .txt{text-align:center;font-size:20px;color:#ec412e;margin-bottom:15px;display:block}
+.word-qr .pic{width:158px;height:158px;margin:0 auto;overflow:hidden}
+.word-qr .pic img{display:block;width:100%;height:100%}
+.m-share{overflow:hidden;padding-bottom:30px;border-bottom:1px solid rgba(8,8,8,.08);line-height:48px}
+.share-l{float:left}
+.share-r{float:right}
+.share-m{float:right}
+.share-l{font-size:0}
+.share-l span{display:inline-block;vertical-align:middle;font-size:16px;color:#080808}
+.share-l .bdsharebuttonbox{display:inline-block;vertical-align:middle}
+.share-l .bdsharebuttonbox a{width:48px;height:48px;display:inline-block;vertical-align:middle;margin:0 5px;padding:0;background:no-repeat center center/32px auto;line-height:48px}
+.share-l .bdsharebuttonbox .bds_weixin{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/wechat-b.svg);-webkit-background-size:35px auto;background-size:35px auto}
+.share-l .bdsharebuttonbox .bds_weixin:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/wechat.svg)}
+.share-l .bdsharebuttonbox .bds_tsina{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/weibo-b.svg)}
+.share-l .bdsharebuttonbox .bds_tsina:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/weibo.svg)}
+.share-l .bdsharebuttonbox .bds_linkedin{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/linkedin-b.svg)}
+.share-l .bdsharebuttonbox .bds_linkedin:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/linkedin.svg)}
+.sap-top .bdsharebuttonbox .bds_weixin{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/wechat-b.svg);-webkit-background-size:35px auto;background-size:35px auto}
+.sap-top .bdsharebuttonbox .bds_weixin:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/wechat.svg)}
+.sap-top .bdsharebuttonbox .bds_tsina{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/weibo-b.svg)}
+.sap-top .bdsharebuttonbox .bds_tsina:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/weibo.svg)}
+.sap-top .bdsharebuttonbox .bds_linkedin{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/linkedin-b.svg)}
+.sap-top .bdsharebuttonbox .bds_linkedin:hover{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/linkedin.svg)}
+.btn-share2{display:block;width:158px;height:46px;line-height:46px;border:1px solid rgba(230,62,49,1);border-radius:3px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus-r.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus-r.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-plus-r@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:64px auto;background-size:64px auto}
+.share-m{font-size:0;border:1px solid rgba(0,0,0,.09);border-radius:3px;height:46px;padding-left:5px;line-height:46px;width:350px;margin-right:14px}
+.share-m img{display:inline-block;vertical-align:middle;width:32px;height:32px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:0 4px}
+.share-m span{display:inline-block;vertical-align:middle;font-size:14px;color:#8e8e8e;font-weight:700;margin-left:7px}
+.m-eval{padding-top:30px}
+.eval-title{font-size:18px;color:#080808}
+.eval-item{padding:25px 0;border-bottom:1px solid rgba(8,8,8,.08);display: flex;}
+.eval-top{overflow:hidden;margin-bottom:17px;flex: 1;}
+.eval-zan{line-height:20px;font-size:0}
+.eval-zan i{display:inline-block;vertical-align:middle;width:16px;height:16px;margin-right:9px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:16px auto;background-size:16px auto;}
+.eval-zan.on i{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan-on.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan-on.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zan-on@2x.png") 2x)}
+.eval-zan span{display:inline-block;vertical-align:middle;color:#c7c7c7;font-size:18px}
+.eval-info{overflow:hidden}
+.eval-pic{float:left;width:80px;height:80px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden;margin-right:20px}
+.eval-pic img{display:block;width:100%;height:100%}
+.eval-txt{height:80px;line-height:80px;overflow:hidden}
+.eval-txt .con{display:inline-block;vertical-align:middle;line-height:1;overflow:hidden;max-width:100%}
+.eval-txt .name{font-size:18px;color:#1a1a1a;padding-bottom:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.eval-txt .mod-info {
+    margin: 0;
+    padding-bottom: 12px;
+}
+.eval-txt .mod-info span{color:#929292}
+.eval-txt .mod-info span+span:after{background-color:#929292}
+.eval-desc{font-size:14px;line-height:24px;color:#545454;flex: 2;}
+.sae-more{display:block;border:1px solid rgba(236,65,46,1);border-radius:3px;height:66px;line-height:64px;text-align:center;font-size:16px;color:#ec412e}
+.sae-more.article-link {
+    margin: 40px 0 40px 0;
+}
+.tab-h1-list{overflow:hidden;border-bottom:1px solid rgba(3,4,24,.08)}
+.tab-h1-list li{display:inline-block;vertical-align:middle;opacity:.3;cursor:pointer}
+.tab-h1-list li+li{margin-left:20px}
+.tab-h1-list .on{opacity:1}
+.tab-h1-list .hci-title{border-bottom:none}
+.tab-h1-con{height:0;overflow:hidden;visibility:hidden}
+.tab-h1-con.ok{height:auto;overflow:visible;visibility:visible}
+.mod-info{position:relative}
+.mod-lang{position:absolute;right:0;top:0;height:100%;width:175px;background-color:#ec412e;display: none;}
+.mod-lang.multi-lang {
+    display: inline-block;
+}
+.mod-lang a{display:inline-block;vertical-align:middle;width:50%;font-size:0;text-align:center;position:relative}
+.mod-lang a *{-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.mod-lang a i{display:inline-block;vertical-align:middle;background-repeat:no-repeat;background-position:center center;width:18px;height:18px;-webkit-background-size:contain;background-size:contain;margin-right:4px;opacity:.5}
+.mod-lang a em{font-size:14px;color:#fff;display:inline-block;vertical-align:middle;opacity:.5}
+.mod-lang .zh i{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-zh.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-zh.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-zh@2x.png) 2x)}
+.mod-lang .du i{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-du.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-du.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-du@2x.png) 2x)}
+.mod-lang .on *,.mod-lang a:hover *{opacity:1}
+.mod-lang a+a:after{content:'';width:1px;height:16px;background-color:#fff;position:absolute;left:0;top:50%;margin-top:-8px}
+.wt-wp{text-align:justify}
+.home-main-top2-nbb{padding-bottom:0}
+.word-text-nbb{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.mod-utd{height:50px;line-height:50px;background-color:#f1f1f1;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden;margin-bottom:30px;margin-top: 20px;}
+.utd-tit{float:left;width:110px;font-size:0;background-color:#ec412e;text-align:center}
+.utd-tit i{display:inline-block;vertical-align:middle;background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;background-position:center center;width:16px;height:21px;margin-right:8px}
+.utd-tit span{display:inline-block;vertical-align:middle;font-size:18px;color:#fff}
+.utd-con{overflow:hidden;padding:0 20px}
+.utd-con a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px;color:#080808;font-weight:700}
+.mobile-ad{display:none}
+.titForMobile{background-color:#fff;display:none}
+.titForMobile h3{width:149px;height:46px;font-size:0;line-height:46px;background-color:#ec412e;text-align:center;margin-left:38px}
+.titForMobile i{background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;display:inline-block;vertical-align:middle;width:15px;height:18px;margin-right:8px}
+.titForMobile span{font-size:20px;color:#fff;display:inline-block;vertical-align:middle}
+.btn-more-mobile{margin:0 40px;height:83px;line-height:82px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;text-align:center;border:1px solid #ec412e;color:#ec412e;font-size:26px;display:none}
+.btn-mobile{display:none}
+.img-mobile{display:none}
+.mod-desc{color:#96969e;font-size:16px;padding-top:30px}
+.shareForMobile{display:none}
+.textForMobile{display:none}
+.lastForMobile{display:none}
+.forMobile{display:none}
+.word-box{overflow:hidden;text-align:justify;padding-top:20px}
+.word-cn,.word-en{float:left;width:50%;padding-right:20px}
+.word-en{padding-right:0;padding-left:20px;line-height:27px;font-family:Arial;font-size:14px}
+.shareAndPrint.fixedUp{position:fixed;top:80px;background-color:#fff}
+.listForMobile{display:none}
+.word-du{display:none}
+.smallest{font-size:.75em}
+.smaller{font-size:.9em}
+.normal{font-size:0.955em}
+.bigger{font-size:1.2em}
+.biggest{font-size:1.25em}
+.word-text.bigger .wt-wp,.word-text.biggest .wt-wp{max-width:none}
+.word-table{border:1px solid #ec412e;overflow:hidden; font-size:14px !important;}
+.wt-table{width:100%;table-layout:fixed;border-bottom:1px solid #ec412e}
+.wt-table th{text-align:left;padding-left:15px;line-height:1.5;vertical-align:top;height:76px;background-color:#f6f6f6;padding-top:15px;cursor:pointer}
+.wt-table th span{display:inline-block;position:relative}
+.wt-table th em{display:block;font-size:12px;}
+.wt-table th span:after{content:'';background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort@2x.png) 2x);width:10px;height:14px;background-position:center center;background-repeat:no-repeat;-webkit-background-size:100% auto;background-size:100% auto;position:absolute;top:4px;right:-15px}
+.wt-table th.sorting_asc span:after{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-up.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-up.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-up@2x.png) 2x);background-position:top center}
+.wt-table th.sorting_desc span:after{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down@2x.png) 2x);background-position:bottom center}
+.wt-table th:last-child{text-align:right;padding-right:40px}
+.wt-table th:nth-child(2){text-align:center;padding-left:0}
+.wt-table tr{background-color:#f3f3f3}
+.wt-table tr+tr{border-top:1px solid #fff}
+.wt-table tr:nth-child(even){background-color:#fafafa}
+.wt-table td{text-align:center;height:66px;}
+.word-img2 .wt-table td{filter:blur(0)}
+.word-img2 .wt-table tr td:nth-child(4),.word-img2 .wt-table tr td:nth-child(5),.word-img2 .wt-table tr td:nth-child(6){}
+.wt-table tr td:first-child{background-color:#c7c1c0;color:#fff}
+.wt-table tr td:nth-child(3),.wt-table tr td:nth-child(4),.wt-table tr td:nth-child(5){text-align:left;padding-left:15px}
+.wt-table tr:nth-child(1) td:first-child{background-color:#ec412e}
+.wt-table tr:nth-child(2) td:first-child{background-color:#f07567}
+.wt-table tr:nth-child(3) td:first-child{background-color:#f4a79e}
+.dataTables_length{float:left;padding-left:15px;color:#fff;font-size:16px;background-color:#ec412e;height:58px;line-height:58px;width:calc(100% - 203px)}
+.dataTables_filter{float:right;width:203px;height:58px;line-height:58px;background-color:#da3523;color:#fff;padding-left:15px}
+.dataTables_filter input{border:none;background:0 0;width:60px;height:100%;color:#fff;font-size:16px}
+.dataTables_length select{width:50px;height:30px;border:1px solid #fff;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;text-align:center;font-size:16px;color:#fff;background-color:#ec412e;padding-left:5px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-w.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-w.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-w@2x.png) 2x);background-position:right 5px center;background-repeat:no-repeat;-webkit-background-size:8px auto;background-size:8px auto}
+.dataTables_info{float:left;width:auto;display: inline-block;padding:20px 15px;line-height:34px}
+.dataTables_paginate{float:right;width:auto;display: inline-block;padding:20px 15px;text-align:right}
+.dataTables_paginate a{cursor:pointer;display:inline-block;vertical-align:middle;margin:0 2px;height:34px;line-height:34px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;overflow:hidden;padding:0 13px;background-color:#ec412e;color:#fff;font-size:14px}
+.dataTables_paginate a.current,.dataTables_paginate a.disabled{background-color:#e2e2e2;color:#787878;cursor:auto}
+.word-tableM{display:none}
+.nav-so{display:none}
+.mod-video{margin-top:20px;padding-bottom:20px;border-bottom:1px solid rgba(0,0,0,.1)}
+.mod-video .con{position:relative}
+.mod-video .con .vjs-theme-forest .vjs-big-play-button {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-size: 100%;
+}
+.mod-video video{width:100%;height:auto;display:block}
+.video-play{width:50px;height:50px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-play2@2x.png) 2x);background-position:center center;background-repeat:no-repeat;-webkit-background-size:contain;background-size:contain;position:absolute;top:50%;left:50%;margin-top:-25px;margin-left:-25px;cursor:pointer;z-index:10}
+.utd-Video{margin-top:20px;overflow:hidden}
+.video-title{font-size:16px;font-weight:700;color:#8c8c8c}
+.utd-Video .hci-video{overflow:hidden;margin:0 -5px}
+.utd-Video .hci-video li{width:33.3%;float:left}
+.utd-Video .hci-video .con{margin:0 5px;overflow:hidden}
+.utd-Video .hci-video .title{margin:0 5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#080808;font-size:14px;padding:5px 0;font-weight:700}
+.bd_weixin_popup{width:auto!important;height:auto!important}
+.bd_weixin_popup .bd_weixin_popup_main{padding-bottom:5px!important;min-height:100px!important}
+.bd_weixin_popup .bd_weixin_popup_foot{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:16px}
+.eval-desc{font-size:16px;line-height:1.7;}
+.mod-word{overflow:hidden;padding-left:80px;padding-right:30px;font-size:18px;line-height:1.6}
+.word-cn{font-size:16px;line-height:1.6}
+.plus-item{display:none}
+.main.has-plus .plus-item{display:block}
+.mod-list1 li.video:hover .l1t-play{opacity:1}
+.page-title{color:#151515;font-size:26px;line-height:70px;border-bottom:1px solid #ececec;margin-bottom:30px}
+.page-title .wp{overflow:hidden}
+.page-title-news{float:right;overflow:hidden}
+.page-title-news .date{float:right;color:#151515;font-size:16px;opacity:.4;margin-left:20px}
+.page-title-news .tit{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px;color:#151515;font-weight:700}
+.m-fiveH{border:1px solid #181818;margin-bottom:30px}
+.m-fiveH.red{border-color:#ec412e}
+.fiveH-title{line-height:80px;position:relative;height:80px;overflow:hidden;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-2.jpg);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-2.jpg")1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-2@2x.jpg") 2x);background-repeat:no-repeat;-webkit-background-size:cover;background-size:cover;background-position:center center}
+.m-fiveH.red .fiveH-title{background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-1.jpg);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-1.jpg")1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/500-1@2x.jpg") 2x)}
+.fiveH-title h3{font-size:22px;color:#fff;font-weight:400;padding-left:25px}
+.fiveH-box{padding:28px;background-color:#fff}
+.fiveH-item{margin-bottom:30px}
+.fiveH-box .fiveH-item:last-child{margin-bottom:10px}
+.fiveH-tit{font-size:18px;color:#151515;line-height:1;margin-bottom:19px}
+.fiveH-con{display:flex;justify-content:space-between;flex-wrap:wrap}
+.fiveH-s{width:calc(50% - 1px);margin-bottom:3px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.fiveH-s:hover{opacity:.8}
+.fiveH-s a{line-height:56px;padding-left:35px;color:#545454;font-size:14px;display:block;background-color:#f0f0f0;position:relative;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:35px}
+.fiveH-s a:after{content:'';width:8px;height:8px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;position:absolute;left:18px;top:50%;margin-top:-4px;background-color:#cecece}
+.m-fiveH2{margin-bottom:30px}
+.fiveH2-title{height:64px;box-shadow:0 0 30px 0 rgba(0,0,0,.03);background-color:#fff;color:#151515;font-size:22px;padding-left:20px;margin-bottom:23px;line-height:64px}
+.mod-news2{display:flex;justify-content:space-between}
+.mod-news2 .news-big1{width:570px;height:338px;float:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;overflow:hidden}
+.mod-news2 .news-list1{width:274px}
+.mod-news2 .list1-con{margin:0}
+.mod-news2 .list1-bot{height:173px}
+.mod-comp{overflow:hidden;padding-left:27px}
+.comp-name{color:#151515;font-size:32px;margin-bottom:20px}
+.comp-rank{overflow:hidden}
+.c-rank-tit{overflow:hidden;background-color:#fff;height:52px;line-height:52px}
+.c-rank-tit .year{float:right;width:167px;background-color:#ec412e;text-align:center}
+.c-rank-tit .year span{font-size:14px;color:#fff}
+.c-rank-tit .year select{font-size:14px;color:#fff;border:none;background-color:#ec412e;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down-w.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down-w.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-sort-down-w@2x.png") 2x);background-repeat:no-repeat;background-position:right center;-webkit-background-size:10px auto;background-size:10px auto;padding-right:15px}
+.c-rank-tit .con{overflow:hidden;padding-left:15px;font-size:16px;color:#030418}
+.c-rank-tit .con em{font-weight:700;color:#ec412e}
+.c-rank-tit .con span{color:#a2a2a2;margin-left:20px}
+.c-rank-tit .con .y1{margin-left:0}
+body{background-color:#fafafa}
+.c-rank-con{padding:25px 29px 35px 36px;background-color:#f4f4f4}
+.c-rank-con .top{overflow:hidden;padding-bottom:33px;border-bottom:1px solid #ddd}
+.c-rank-con .top .info{overflow:hidden}
+.c-rank-con .top .info span{display:block;color:#9798a0;font-size:14px}
+.c-rank-con .top .info p{font-size:16px;color:#151515;margin-bottom:15px}
+.c-rank-con .top .info p:last-child{margin-bottom:0}
+.c-rank-con .top .table{float:right;margin-left:20px;width:350px;border:1px solid #ec412e;background-color:#fff}
+.c-rank-con .top .table table{width:100%;table-layout:fixed}
+.c-rank-con .top .table table td{height:40px;vertical-align:middle;font-size:16px;color:#fff;padding-right:24px;text-align:right}
+.c-rank-con .top .table table tr td:first-child{background-color:#fff;color:#cf8d86;font-size:14px;padding-left:24px;padding-right:0;text-align:left}
+.c-rank-con .top .table table tr td:nth-child(2){background-color:#ec412e}
+.c-rank-con .top .table table tr td:last-child{background-color:#f06656}
+.c-rank-con .top .table table tr:last-child td{padding-bottom:10px;height:50px}
+.c-rank-con .bot{padding-top:25px}
+.c-rank-con .bot .title{font-size:16px;color:#151515;margin-bottom:20px}
+.c-rank-con .bot .list{display:flex;flex-wrap:wrap;justify-content:space-between}
+.c-rank-con .bot .list li{width:calc(50% - 23px);margin-bottom:15px}
+.c-rank-con .bot .list a{display:block;padding-left:16px;position:relative;font-size:14px;color:#151515;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.c-rank-con .bot .list a:after{content:'';width:8px;height:8px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;position:absolute;left:0;top:50%;margin-top:-4px;background-color:#d5d5d5}
+.c-rank-con .bot .list a:hover{opacity:.8}
+.comp-desc{background-color:#f4f4f4;padding:35px 78px 40px 50px;margin-bottom:30px;margin-top:30px}
+.comp-desc .title{color:#0a0809;font-size:18px;margin-bottom:25px}
+.comp-desc .con{color:#030418;font-size:16px;line-height:30px;text-align:justify}
+.m-tubiao{border:1px solid #ec412e;margin-bottom:35px;position:relative}
+.rankcolname{height:68px;font-size:14px;line-height:68px;display:block;background-color:#ec412e;padding-left:20px;color:#fff}
+.biaoqian{float:right;font-weight:400;overflow:hidden}
+.biaoqian span{display:block;float:left;padding:0 40px;text-align:center;height:100%;cursor:pointer}
+.redback{background-color:#d03a29}
+#historycanvas{width:100%;height:500px}
+.blur{filter:blur(5px)}
+#compare{overflow:hidden;text-align:center;font-size:16px;padding:20px 0}
+.ac_input{border:none;background-color:#eee;height:40px;line-height:40px;width:200px;padding-left:10px}
+.ac_submit{border:none;height:40px;padding:0 10px;background-color:#fff;box-shadow:0 0 10px 0 rgba(0,0,0,.1)}
+#companysDiv{background-color:#eee;padding:10px;font-size:14px}
+#competitorscanvas{width:96%;height:500px}
+.amcharts-chart-div>a{display:none!important}
+.autocomplete-suggestions{border:1px solid #999;background:#fff;overflow:auto}
+.autocomplete-suggestion{padding:2px 5px;white-space:nowrap;overflow:hidden;cursor:pointer}
+.autocomplete-selected{background:#f0f0f0}
+.autocomplete-suggestions strong{font-weight:400;color:#39f}
+.autocomplete-group{padding:2px 5px}
+.autocomplete-group strong{display:block;border-bottom:1px solid #000}
+.js-text{position:relative}
+.set-fontSize{position:absolute;left:90%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);background-color:#fff;padding:0 21px 0 20px;border:1px solid rgba(0,0,0,.1);box-shadow:0 0 18px 0 rgba(0,0,0,.1);border-radius:3px;z-index:5;opacity:0;pointer-events:none;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.set-fontSize:after{content:'';background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san-l.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san-l.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san-l@2x.png") 2x);width:12px;height:19px;background-repeat:no-repeat;background-position:right center;-webkit-background-size:contain;background-size:contain;position:absolute;right:100%;top:50%;margin-top:-10px}
+.sf-item{white-space:nowrap;line-height:47px;color:#545454;opacity:.6;font-size:14px;width:70px;text-align:right;border-bottom:1px solid #ececec;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text@2x.png") 2x);background-repeat:no-repeat;background-position:left 10px center;-webkit-background-size:14px auto;background-size:14px auto;padding-right:10px}
+.sf-con .sf-item:last-child{border-bottom:none}
+.sf-item.on{color:#ec412e;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text-r.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text-r.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-text-r@2x.png") 2x)}
+.js-text:hover .set-fontSize{opacity:1;pointer-events:auto}
+.btn-plus{position:relative}
+.btn-plus .pic{width:120px;height:120px;padding:10px;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;position:absolute;top:120%;left:50%;margin-left:-60px;box-shadow:0 0 18px 0 rgba(0,0,0,.1);z-index:5;background-color:#fff;border:1px solid rgba(0,0,0,.1);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s;pointer-events:none}
+.btn-plus .pic:after{content:'';width:18px;height:6px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png);background-image:-webkit-image-set(url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san.png") 1x , url("https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/h-san@2x.png") 2x);background-repeat:no-repeat;background-position:center center;-webkit-background-size:contain;background-size:contain;position:absolute;top:-6px;left:50%;margin-left:-9px}
+.btn-plus .pic img{display:block;width:100%;height:100%}
+.btn-plus:hover .pic{opacity:1;pointer-events:auto}
+.sap-out{position:relative;z-index:10;background-color:#fff}
+.g-hr{margin-top:40px}
+.hd-tit-txt{display:none}
+@media print{
+body{min-width:0;background-color:#fff;padding-top:0}
+.main{background-color:#fff;position:relative}
+.wp{max-width:none;width:100%}
+.home-main{width:100%;float:none;background-color:#fff}
+.mod-word{width:100%;background-color:#fff;padding:0;margin:0}
+.mod-word img{display:block;width:100%;height:auto;max-width:100%;margin:20px 0}
+.mod-info{height:0}
+.sap-out{display:none}
+.home-col{display:none}
+.home-main-bot{display:none}
+.mod-desc{padding-top:0}
+.ad-top{display:none}
+.word-text{padding-top:0}
+}
+.form-so{text-align:center;padding:31px 0;background-color:#f6f6f6;border-top:1px solid #ebebeb;border-bottom:1px solid #ebebeb}
+.form-so ul{display:inline-block;vertical-align:middle;margin-right:12px}
+.form-so ul li{position:relative;font-size:16px;height:40px;line-height:38px;border:1px solid #ff7869;background-color:#feefed;padding:0 46px 0 23px;color:#ec412e}
+.form-so ul li i{position:absolute;top:50%;margin-top:-6px;right:20px;width:12px;height:13px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose2.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose2.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose2@2x.png) 2x);-webkit-background-size:contain;background-size:contain}
+.form-so .so{position:relative;width:452px;display:inline-block;vertical-align:middle;margin-right:12px}
+.form-so .inp{display:block;width:100%;height:40px;padding:0 16px;border:1px solid #d7d7d7;color:#545454}
+.form-so .submit{position:absolute;top:0;right:0;width:60px;height:39px;background-repeat:no-repeat;background-position:center;border:0;font-size:0;background-color:#ec412e;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so2.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so2.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so2@2x.png) 2x);-webkit-background-size:17px auto;background-size:17px auto}
+.form-so .sel{display:inline-block;vertical-align:middle}
+.form-so .sel a{color:#151515;opacity:.24;line-height:40px;margin:0 10px;-webkit-transition:.3s;-moz-transition:.3s;-ms-transition:.3s;-o-transition:.3s;transition:.3s}
+.form-so .sel a.on,.form-so .sel a:hover{opacity:1}
+.z-soresult{overflow:hidden;padding:36px 0 0}
+.z-soresult .home-col{margin-top:-36px}
+.soresult-l{float:left;width:863px;border-top:1px solid #e6e6e6}
+.z-tab{position:relative;top:35px;overflow:hidden;padding:0 0 16px}
+.z-tab li{float:left;margin-right:40px}
+.z-tab li a{display:block;font-size:24px;color:#151515;opacity:.2;-webkit-transition:.3s;-moz-transition:.3s;-ms-transition:.3s;-o-transition:.3s;transition:.3s}
+.z-tab li a:hover,.z-tab li.on a{opacity:1}
+.z-list1 li{padding:26px 0 26px;border-bottom:1px solid #e6e6e6}
+.z-list1 h4{margin-bottom:16px}
+.z-list1 h4 a{font-size:16px;color:#151515;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.z-list1 h4 a strong{color:#ec412e}
+.z-list1 .info{padding:10px 12px 12px;background-color:#f2f2f2;color:#666;margin-bottom:12px}
+.z-list1 .tip{position:relative;top:-8px;color:silver}
+.z-list1 .tip span{position:relative}
+.z-list1 .tip span+span{margin-left:28px}
+.z-list1 .tip span+span:before{content:'';position:absolute;top:50%;left:-14px;margin-top:-6px;width:1px;height:11px;background-color:silver}
+.z-list1 p{line-height:25px;color:#666;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;max-height:75px}
+.pages{text-align:center;padding:35px 0}
+.pages ul{display:inline-block}
+.pages ul li{float:left;margin-right:5px}
+.pages ul li a{display:block;height:32px;line-height:32px;min-width:32px;padding:0 8px;background-color:#ec412e;border-radius:2px;color:#fff}
+.pages ul li.on a{background-color:#e3e3e3;color:#717171}
+.sel-on{padding:18px 0 0;overflow:hidden}
+.sel-on span{float:left;color:#000;line-height:32px}
+.sel-on ul{overflow:hidden}
+.sel-on ul li{position:relative;float:left;height:32px;line-height:30px;border:1px solid #e0e0e0;background-color:#f6f6f6;padding:0 32px 0 12px}
+.sel-on ul li i{position:absolute;top:50%;margin-top:-5px;right:14px;width:10px;height:10px;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/zclose@2x.png) 2x);-webkit-background-size:contain;background-size:contain;cursor:pointer;z-index:2}
+.soresult-r{float:right;width:300px;border:1px solid #e3e3e3;padding:20px 22px 0}
+.z-classify li{margin-bottom:18px}
+.z-classify h4{font-size:16px;color:#030418;margin-bottom:10px}
+.z-classify .con a{display:block;line-height:36px;background-color:#f2f2f2;padding:0 14px;margin-bottom:2px;color:#666;-webkit-transition:.3s;-moz-transition:.3s;-ms-transition:.3s;-o-transition:.3s;transition:.3s}
+.z-classify .con a.hide{display:none}
+.z-classify .con a:hover{color:#151515}
+.z-classify .con a.on{font-weight:700;color:#151515}
+.main2{background-color:#fafafa}
+.tab-con{display:none}
+.tab-con.ok{display:block}
+@media only screen and (max-width:1199px){
+.z-soresult{padding:30px 0}
+.soresult-l,.soresult-r{float:none;width:auto}
+}
+@media only screen and (max-width:767px){
+.main2{background-color:#f6f6f6}
+.form-so{padding:20px}
+.form-so .so{display:block;width:auto;margin-right:0}
+.form-so ul{display:block;margin-right:0;margin-bottom:5px}
+.z-soresult{padding:30px 20px}
+.pages ul li{margin-right:3px}
+.pages ul li a{min-width:28px}
+.z-list1 li{padding:10px 0}
+.z-tab li{margin-right:20px}
+.z-tab li a{font-size:18px}
+.z-tab{padding-left:20px}
+.form-so.mobile .sel,.form-so.mobile ul{display:none}
+.wp2{padding:0 20px}
+.form-so.mobile{border-bottom:0;padding:20px 20px 0}
+.form-so .submit{background-color:transparent;background-image:url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so.png);background-image:-webkit-image-set(url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so.png) 1x,url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/so@2x.png) 2x)}
+.z-list1.mobile li{padding:24px 0}
+.z-list1.mobile h4{margin-bottom:10px}
+.z-list1.mobile p{-webkit-line-clamp:2;max-height:50px;margin-bottom:15px}
+.z-list1.mobile .tip{top:0}
+.so-tit{line-height:4;text-align:center;color:#999;border-bottom:1px solid #eee}
+.btn-more-mobile.mobile{margin:30px 0}
+.z-list1 .tip span+span:before{background-color:#ddd}
+.tab-con .btn-more-mobile{margin-bottom:30px}
+}
+
+
+
+.dHome {
+    overflow: hidden;
+    height: 1200px;
+    background: url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/bg1.jpg) no-repeat right bottom/cover
+}
+
+.dHome .wp {
+    position: relative;
+    overflow: hidden
+}
+
+.dHome .l {
+    width: 473px;
+    padding-top: 170px;
+    margin-right: 50px
+}
+
+.dHome .r {
+    width: 250px;
+    padding-top: 244px
+}
+
+.dHome .slogan {
+    overflow: hidden;
+    padding-top: 40px
+}
+
+.dHome .slogan .pic1 {
+    float: left;
+    margin-right: 35px;
+    width: 124px;
+    height: 124px;
+    background-color: #151515;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 124px;
+    text-align: center
+}
+
+.dHome .slogan .pic1 img {
+    width: 72px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.dHome .slogan .pic2 {
+    position: relative;
+    float: left;
+    padding-left: 50px;
+    padding-top: 16px;
+    top: 14px
+}
+
+.dHome .slogan .pic2:after {
+    content: '';
+    width: 30px;
+    height: 20px;
+    background: url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/left-quote.svg) no-repeat center center/contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8
+}
+
+.dHome .slogan .pic2:before {
+    content: '';
+    width: 30px;
+    height: 20px;
+    background: url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/right-quote.svg) no-repeat center center/contain;
+    position: absolute;
+    bottom: 8px;
+    left: calc(100% + 20px);
+    opacity: .8
+}
+
+.dHome .slogan .pic2 .txt {
+    width: 94px;
+    opacity: .8
+}
+
+.dHome .btn {
+    width: 100%;
+    height: 82px;
+    overflow: hidden;
+    margin-top: 46px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 0;
+    line-height: 82px
+}
+
+.dHome .btn a {
+    display: block;
+    opacity: .8
+}
+
+.dHome .btn a:hover {
+    opacity: 1
+}
+
+.dHome .btn img {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.dHome .btn .txt {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    color: #151515;
+    font-family: Arial, PingFang-SC-Bold;
+    font-weight: 700
+}
+
+.dHome .btn.ios a {
+    padding-left: 38px
+}
+
+.dHome .btn.and a {
+    padding-left: 35px
+}
+
+.dHome .btn.ios .icon {
+    width: 30px;
+    height: 36px;
+    margin-right: 24px
+}
+
+.dHome .btn.and .icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 17px
+}
+
+.dHome .btn+.btn {
+    margin-top: 30px
+}
+
+.dHome .r .s2 {
+    position: relative;
+    padding-left: 43px;
+    padding-top: 18px
+}
+
+.dHome .r .s2:after {
+    content: '';
+    width: 30px;
+    height: 20px;
+    background: url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/left-quote.svg) no-repeat center center/contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8
+}
+
+.dHome .r .s2:before {
+    content: '';
+    width: 30px;
+    height: 20px;
+    background: url(https://fortunechina2020.oss-cn-beijing.aliyuncs.com/web/images/right-quote.svg) no-repeat center center/contain;
+    position: absolute;
+    bottom: 8px;
+    right: 11px;
+    opacity: .8
+}
+
+.dHome .r .s2 .txt {
+    width: 150px;
+    height: auto;
+    opacity: .8
+}
+
+.dHome .r .qr {
+    margin-top: 40px
+}
+
+.dHome .r .qr .pic {
+    width: 168px
+}
+
+.dHome .r .qr .pic img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.dHome .r .qr .txt {
+    font-size: 22px;
+    color: #fff;
+    width: 168px;
+    text-align: justify;
+    margin-top: 15px
+}
+
+.dHome .r .qr .txt:after {
+    content: '';
+    display: inline-block;
+    width: 100%
+}
+
+.dHome .phone {
+    overflow: hidden;
+    width: 412px;
+    padding-top: 216px
+}
+
+.rankingtable{
+	border:none;
+	width:100%;
+	margin-top:9px;
+}
+.rankingtable th{
+	white-space:nowrap;
+	padding-left:5px;
+	padding-right:5px; 
+	padding-top:7px; 
+	padding-bottom:5px; 
+	font-size:12px; 
+	border-bottom:#eee 1px solid; 
+	text-align:left; 
+	background-color: #EEEEEE; 
+	color:#666666; 
+	font-weight: normal; 
+}
+.rankingtable td {
+	padding-left:5px;
+	padding-right:5px; 
+	padding-top:5px; 
+	padding-bottom:3px; 
+	font-size:14px;
+	border-bottom:#eee 1px solid;
+	text-align:left;
+}
+.rankingtable td.f500c6 {
+	font-size: 12px; 
+	width: 39px;
+} 
+.fd-nav-bot a:nth-child(2){ color: #ec412e; }
+
+/* æ–°å¢žtable css */
+
+
+.wt-table th.key {
+    text-align: center;
+    padding-right: 0
+}
+
+.wt-table th:nth-child(6),
+.wt-table th:nth-child(7) {
+    text-align: center;
+}
+
+.wt-table td.control {
+    text-align: center !important;
+}
+
+.wt-table td.control span {
+    font-size: 24px;
+    display: inline-block;
+    /* transition: transform 0.5s linear; */
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+.wt-table tr.shown .control span {
+    transform: rotate(-45deg);
+}
+
+.wt-table tr.shown+tr {
+    border-top: unset;
+}
+
+.wt-table tr.shown+tr td:first-child {
+    background-color: #f3f3f3;
+}
+
+.wt-table table.detail {
+    width: 100%;
+}
+
+.wt-table tr.shown+tr td:first-child table {
+    color: #333;
+    border-collapse: separate;
+}
+
+.wt-table table.detail tr td:nth-child(2) {
+    background-color: #e94236;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 0;
+    text-align: left;
+    border-left: 2px solid #e94236;
+    /* border-right: 2px solid #cf8d86; */
+}
+
+.wt-table table.detail tr:first-child td:nth-child(2) {
+    border-top: 2px #e94236 solid;
+}
+
+.wt-table table.detail tr:last-child td:nth-child(2) {
+    border-bottom: 2px #e94236 solid;
+}
+
+.wt-table table.detail tr td:nth-child(3) {
+    background-color: #e13c31;
+    color: #fff;
+    text-align: center;
+}
+
+.wt-table table.detail tr td:last-child {
+    background-color: #d7372b;
+    color: #fff;
+    text-align: center;
+}
+
+
+.word-img2 .wt-table table.detail.qrlink {
+    border-collapse: separate;
+}
+
+.word-img2 .wt-table table.detail.qrlink tr+tr {
+    border: unset;
+}
+
+
+
+.word-img2 .wt-table table.detail.qrlink tbody tr td:nth-child(3),
+.word-img2 .wt-table table.detail.qrlink tbody tr td:last-child {
+    position: relative;
+}
+
+/* .word-img2 .wt-table table.detail.qrlink tbody tr td:nth-child(3),
+.word-img2 .wt-table table.detail.qrlink tbody tr td:last-child {
+    filter: blur(3px);
+}
+
+.word-img2 .wt-table table.detail.qrlink tbody tr:first-child td:nth-child(3),
+.word-img2 .wt-table table.detail.qrlink tbody tr:first-child td:last-child {
+    filter: unset;
+} */
+/* KOLÐÂÔö */
+.kol-container {
+  width: 300px;
+  height: 481px;
+  margin-top: 15px;
+}
+.kol-container.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+  text-align: left;
+}
+.kol-container.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #ec412e;
+}
+.hci-kol {
+  min-height: 430px;
+}
+.hci-kol .kol-item {
+  height: 215px;
+}
+.hci-kol .kol-item .kol-top {
+  padding: 15px 20px;
+  background-color: #fff;
+}
+.hci-kol .kol-item .kol-title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #151515;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
+  transition: all 0.5s;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #0000000f;
+}
+.hci-kol .kol-item .kol-content {
+  font-size: 13px;
+  line-height: 20px;
+  color: #0000009e;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.hci-kol .kol-item .kol-bottom {
+  padding: 15px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.03);
+}
+.hci-kol .kol-item .kol-bottom .kol-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 44px;
+  max-width: 44px;
+  flex-basis: auto;
+  /* default value */
+  flex-grow: 1;
+}
+.hci-kol .kol-item .kol-bottom .kol-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hci-kol .kol-item .kol-bottom .kol-info {
+  font-size: 13px;
+  line-height: 22px;
+  color: #0000009e;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  text-align: right;
+}
+.hci-kol .kol-item .kol-bottom .kol-info span + span {
+  padding-left: 10px;
+}
+.hci-kol .kol-item .kol-bottom .kol-info .kol-name {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ec412e;
+}
+.ugo .main .ugo-main-top {
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #0000001a;
+  overflow: hidden;
+}
+.ugo .ugo-kol {
+  color: #545454;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+.ugo .ugo-kol .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 150px;
+  max-width: 150px;
+  flex-basis: auto;
+  /* default value */
+  flex-grow: 1;
+}
+.ugo .ugo-kol .avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ugo .ugo-kol .info {
+  margin: 15px 15px 15px 30px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.ugo .ugo-kol .info .top {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ugo .ugo-kol .info .top .name {
+  font-weight: 700;
+  font-size: 24px;
+}
+.ugo .ugo-kol .info .top .position {
+  font-size: 18px;
+}
+.ugo .ugo-kol .info .recommend {
+  font-size: 14px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #0000000d;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.ugo .ugo-text {
+  padding-top: 30px;
+  font-size: 16px;
+  color: #545454;
+  line-height: 1.7;
+  border-bottom: 1px solid #0a08091a;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: justify;
+}
+.ugo .ugo-text p {
+  margin-bottom: 20px;
+}
+.kol .ugo-kol {
+  color: #545454;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+.kol .ugo-kol .avatar {
+  margin: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 150px;
+  max-width: 150px;
+  flex-basis: auto;
+  /* default value */
+  flex-grow: 1;
+}
+.kol .ugo-kol .avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.kol .ugo-kol .info {
+  margin: 15px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.kol .ugo-kol .info .top {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.kol .ugo-kol .info .top .name {
+  font-weight: 700;
+  font-size: 24px;
+}
+.kol .ugo-kol .info .top .position {
+  font-size: 18px;
+}
+.kol .ugo-kol .info .recommend {
+  font-size: 14px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #0000000d;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.kol .ugo-kol .follow {
+  background-color: #ec412e;
+  width: 148px;
+  border-radius: 2px;
+  overflow: hidden;
+  min-width: 148px;
+  max-width: 148px;
+  flex-basis: auto;
+  /* default value */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.kol .ugo-kol .follow .f-top .num {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.36;
+}
+.kol .ugo-kol .follow .f-top .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff80;
+  line-height: 1.36;
+}
+.kol .ugo-kol .follow .f-bt {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #fff3;
+}
+.kol .ugo-kol .follow .f-bt .follow-btn {
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
+  align-items: center;
+}
+.kol .ugo-kol .follow .f-bt .follow-btn .plus {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('https://hrawards.51job.com/channel/images/plus.svg') center center no-repeat;
+  background-size: 16px;
+}
+.kol .ugo-kol .follow .f-bt .follow-btn span + span {
+  padding-left: 6px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+}
+.kol .kol-opinions {
+  margin-top: 40px;
+}
+.kol .kol-opinions .op-tit {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.kol .kol-opinions .op-items .op-item {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #f3f3f3;
+  color: #000;
+}
+.kol .kol-opinions .op-items .op-item .op-comment {
+  font-size: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.kol .kol-opinions .op-items .op-item .op-comment a {
+  display: block;
+}
+.kol .kol-opinions .op-items .op-item .op-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.kol .kol-opinions .op-items .op-item .op-detail .ugo-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kol .kol-opinions .op-items .op-item .op-detail .ugo-txt .ugo-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(https://hrawards.51job.com/channel/images/comments.svg) center center no-repeat;
+  background-size: cover;
+}
+.kol .kol-opinions .op-items .op-item .op-detail .ugo-txt span + span {
+  padding-left: 8px;
+  color: #ec412e;
+  font-size: 15px;
+  font-weight: 700;
+}
+.kol .kol-opinions .op-items .op-item .op-detail .eval-zan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kol .kol-opinions .op-items .op-item .op-slash {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #0000001a;
+  position: relative;
+}
+.kol .kol-opinions .op-items .op-item .op-slash::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid #0000;
+  border-right: 10px solid #0000;
+  border-top: 10px solid #0000001a;
+  left: 22px;
+  bottom: -10px;
+  z-index: 1;
+}
+.kol .kol-opinions .op-items .op-item .op-slash::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #f3f3f3;
+  transform: rotate(45deg);
+  left: 22px;
+  bottom: -5px;
+  z-index: 2;
+}
+
+.kol .kol-opinions .op-items .op-item .op-title {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.kol .kol-opinions .op-items + .sae-more {
+  margin-top: 40px;
+  height: 50px;
+  line-height: 50px;
+}
+.kol .kol-opinions .op-items + .sae-more.hide {
+  display: none;
+}
+
+.word-img2 .wt-table table.detail.qrlink tbody tr td:nth-child(3)::after,
+.word-img2 .wt-table table.detail.qrlink tbody tr td:last-child::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #e13c31;
+    background-color: #e13c31;
+}
+
+.word-img2 .wt-table table.detail.qrlink tbody tr:first-child td:nth-child(3)::after,
+.word-img2 .wt-table table.detail.qrlink tbody tr:first-child td:last-child::after {
+    display: none;
+}
+
+.word-img2 .word-qr.white .txt {
+    color: #fff;
+}
+
+.word-img2 .word-qr.white .qrcode {
+    filter: brightness(0) invert(1);
+}
+
+.word-img2 .wt-table table.detail.qrlink .word-qr {
+    width: auto;
+    left: 50%;
+    top: 50%;
+    max-width: 165px;
+    transform: translate(50%, -50%);
+}
+
+  .mobilebutton
+    {
+        display: none;
+    }
+    .mobilebutton a {
+        color: #fff;
+    }
+    
+    @media only screen and (max-width:640px) {
+        .mobilebutton {
+            display: block;
+            position: fixed;
+            height: 200px;
+            width: 100%;
+            background-color: #ec412e;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 70px;
+            line-height: 200px;
+	    			left:0;
+	    			bottom:0;
+	    			z-index:999;
+        }
+        
+        .mobilebutton img
+        {
+        	height: 70px !important;
+    			width: 70px !important;
+    			margin-bottom: -15px;
+        }
+    
+
+				.z-soresult .home-col
+				{
+					display:none;
+				}
+				.soresult-l
+				{
+					width: 100% !important;
+				}
+				
+				.word-text-con
+				{
+					height:auto !important;
+				}
+				
+			 	
+
+    }
